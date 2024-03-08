@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+       
+
+        body {
+            background: #ffffff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        [x-cloak] {
+
+            display: none !important;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            /* background-color: linear-gradient(rgba(6, 0, 8, 0.7), rgba(7, 8, 14, 0.7)); */
+
+        }
+
+        .swiper-wrapper {
+            height: 94vh;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            height: 94vh;
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(rgba(6, 0, 8, 0.7), rgba(7, 8, 14, 0.7)), url(./images/cover\ 1.jpg);
+        }
+
+        /* .swiper_section {
+      height: 45vh;
+    }
+    */
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-color: #141212;
+
+
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        .custom-container {
+            width: 100%;
+            max-width: 900px;
+            color: #fff;
+            text-align: left;
+            padding: 20px;
+            /* Add padding as needed */
+            margin-top: 10px;
+            /* Adjust the top margin */
+            margin-bottom: 10px;
+            /* Adjust the bottom margin */
+        }
+
+        .white_text {
+            color: rgb(247, 246, 244);
+            font-size: 70px;
+            margin-bottom: 10px;
+            /* Adjust the bottom margin */
+
+        }
+
+        .text-orange {
+            color: #876629;
+            font-size: 25px;
+            margin-top: 10px;
+            /* Adjust the top margin */
+            margin-bottom: 10px;
+            /* Adjust the bottom margin */
+        }
+
+
+        .display-3 {
+            font-size: 2.5rem;
+            /* Adjust as needed */
+        }
+
+        .button-slider {
+            background-color: #876629;
+            color: #fff;
+            width: 150px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Center the text horizontally */
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            /* Adjust padding as needed */
+            border: 3px solid #360950;
+            /* Dark purple border */
+            border-radius: 8px 8px 8px 8px;
+            font-size: 16px;
+            box-shadow: #141212;
+        }
+
+
+        .button-slider:hover {
+            background-color: #360950;
+            color: #fff;
+            width: 150px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Center the text horizontally */
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            /* Adjust padding as needed */
+            border: 3px solid #360950;
+            /* Dark purple border */
+            border-radius: 8px 8px 8px 8px;
+            font-size: 16px;
+            box-shadow: #141212;
+        }
+
+
+/* responsive */
+.bottom-nav {
+  background-color: #8b5a2b;
+  padding: 10px;
+}
+
+.bottom-nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-nav .right-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bottom-nav .centre_nav {
+  display: none;
+}
+
+.bottom-nav .centre_nav.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8b5a2b;
+}
+
+.bottom-nav .centre_nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  background-color: #8b5a2b;
+}
+
+.bottom-nav .centre_nav a:hover {
+  background-color: #3d0349;
+}
+
+.bottom-nav .toggle-btn {
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.bottom-nav .toggle-btn:focus {
+  outline: none;
+}
+
+/* New styles to encapsulate navbar */
+.navbar-container {
+  /* Add any necessary styles here */
+}
+@media screen and (min-width: 768px) {
+  .bottom-nav {
+    background-color: #8b5a2b;
+    padding: 10px;
+  }
+
+  .bottom-nav .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom-nav .right-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align contents to the right */
+  }
+
+  .bottom-nav .centre_nav {
+    display: none;
+  }
+
+  .bottom-nav .centre_nav.active {
+    display: flex;
+    flex-direction: column; /* Adjusted to stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #8b5a2b; /* Adjusted background color */
+  }
+
+  .bottom-nav .centre_nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px; /* Adjusted margin */
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    background-color: #8b5a2b;
+  }
+
+  .bottom-nav .centre_nav a:hover {
+    background-color: #3d0349;
+  }
+
+  .bottom-nav .toggle-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .bottom-nav .toggle-btn:focus {
+    outline: none;
+  }
+
+  .bottom-nav .dropdown {
+    position: block;
+  }
+
+  .bottom-nav .dropdown-content {
+    display: block;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .bottom-nav .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .bottom-nav .centre_nav {
+    display: flex;
+    flex-direction: block; /* Adjusted to display items horizontally */
+    justify-content: center;
+    padding-right: 40px;
+  }
+
+  .bottom-nav .toggle-btn {
+    display: none;
+  }
+}
+
+
+        
+    </style>
+
+    <!-- Alpine code  -->
+    <script src="static/js/code.js" defer></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+
+<body x-data="SkillsDevelopmentCommitteeTookkit" x-cloak>
+    <section class="nav_sec">
+        <div class="top-nav">
+            <div class="logo"><img src="./images/logo.jpg" alt="" width="145px"></div>
+
+            <div class="nav-icons">
+                <div class="location">
+                    <img src="./images/Location (1).png" alt="Location Icon" width="20px">
+                    <span>72 New Rd, Glen Austin AH,<br> Midrand, 1685</span>
+                </div>
+                <div class="phone">
+                    <img src="./images/Group 234.png" alt="Phone Icon" width="30px"><br>
+                    <span>for enquiries call: <br>+27 11 726 7777</span>
+                </div>
+                <div class="email">
+                    <img src="./images/Subtract.png" alt="Email Icon" width="30px">
+                    <span>or send enquiries to: <br>info@chieta.org.za</span>
+                </div>
+            </div>
+        </div>
+        <!-- Updated Second Navigation Bar -->
+        <div class="bottom-nav">
+            <div class="nav-links">
+              <div class="right-links">
+                <button class="toggle-btn">&#9776;</button> <!-- Toggle button -->
+                <div class="dropdown">
+                </div>
+              </div>
+              <div class="centre_nav">
+                <a href="#">Home</a>
+                <a href="./SDF.html">SDC&SDF</a>
+                <a href="./legislations.html">Laws & Legislations</a>
+                <a href="./structures.html">PSET Entities</a>
+                <a href="./resources.html">Resources</a>
+                <a href="./quiz-and-game.html">Assessments</a>
+              </div>
+            </div>
+          </div>
+        <!-- ....................CAOUROSAL ..j -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="p-5 custom-container">
+                        <h6 class="text-orange text-uppercase mb-md-3">QUiz and Games</h6>
+                        <h7 class="white_text">UNLUCK YOUR BRILLIANCE ?
+
+                            </h1>
+
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container-quiz-game-assessment" x-show="quiz_and_game_home" x-cloak>
+
+            <div class="game_and_quiz_left">
+
+
+                <article class="card8">
+                    <h5 style="color: white;">WORD SEARCH GAME</h5>
+                    <!-- <p class="card__description">20 Cases
+              </p> -->
+
+                    <button class="guessing-word-submit-btn" x-on:click="openHome('play_game_word')">click to start</button>
+
+
+                    <div class="card__content">
+                        <div class="card__content--container">
+
+                            <p class="card__description">
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="game_and_quiz_left">
+
+
+                <article class="card8">
+                    <h5 style="color: white;">PLAY A RIDDLE GAME ?</h5>
+                    <!-- <p class="card__description">20 Cases
+              </p> -->
+
+                    <button class="guessing-word-submit-btn" x-on:click="openHome('play_game_riddle')">click to start</button>
+
+
+                    <div class="card__content">
+                        <div class="card__content--container">
+
+                            <p class="card__description">
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+
+
+            <div class="game_and_quiz_right">
+
+                <article class="card8">
+                    <h5 style="color: white;">TAKE A QUIZ ?</h5>
+                    <!-- <p class="card__description">20 Cases
+                    </p> -->
+
+                    <button class="guessing-word-submit-btn" x-on:click="openHome('start_quiz')">click to start</button>
+
+
+                    <div class="card__content">
+                        <div class="card__content--container">
+
+                            <p class="card__description">
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Section to divide the quiz and the games  -->
+
+    <section>
+
+        <!-- Instruction section  -->
+
+
+
+        <div class="container-quiz-game" x-show="start_quiz" x-cloak>
+
+
+
+            <div class="detailed_instructions">
+                <p style="text-align: center;">INSTRUCTIONS ON OUR DIFFERENT QUIZES</p>
+
+                <p>There will be two (2) different quizes sections to take. The first section will cover three modules
+                    which you
+                    ought to have read and watched
+                    some vidoes before coming to this page to take the quiz as a means to prepare yourself. Our quizes
+                    have been carefully selected to
+                    test your brilliance and technical know-how.
+                </p>
+
+                <p>
+                    Once you have started the quiz, you are not allowed to leave the quiz page or refresh your broswer
+                    for you will loose your progress
+                    and will score a zero.
+                </p>
+
+                <p>
+                    Section 1: <br> This will comprise of 15 multiple choice questions that covers questions from
+                    <b>skill development facilitator</b>,
+                    skill development committee, and skills development laws and legislation module
+                </p>
+
+                <p>
+                    Section 2: <br> This will comprise of 10 multiple choice questions that covers questions from
+                    <b>skill development structures</b>,
+                    and skills development resources module
+                </p>
+
+              
+                
+                    <a href="./assessments.html" style="float: right;" class="guessing-word-submit-btn">START QUIZ</a>
+
+            </div>
+
+        </div>
+
+        <!-- Quiz one starts here  -->
+
+        <div class="container-quiz-game" x-show="skills_quiz_section_1" x-cloak>
+
+            <p class="quiz_and_game_instructions">SECTION 1</p>
+
+            
+
+            <div>
+
+
+                <div class="quiz">
+
+                    <h2 id="question"> Question Goes here</h2>
+                    <div id="answer-buttons">
+                        <button class="btn-quiz">Answer 1</button>
+                        <button class="btn-quiz">Answer 2</button>
+                        <button class="btn-quiz">Answer 3</button>
+                        <button class="btn-quiz">Answer 4</button>
+
+                    </div>
+                    <div>
+                        <button id="next-btn">Next</button>
+                        <button id="guessing-word-submit-btn" x-on:click="openHome('skills_quiz_section_2')"
+                            class="guessing-word-submit-btn">START
+                            SECTION 2</button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Quiz one ends here  -->
+
+
+        <!-- Quiz two section starts here  -->
+        <div x-show="skills_quiz_section_2" class="container-quiz-game" x-cloak>
+
+            <p class="quiz_and_game_instructions">SECTION 2</p>
+            
+            
+
+
+            <div class="quiz">
+
+                <h2 id="questionSection2"> Question Goes here</h2>
+                <div id="answer-buttonsSection2">
+                    <button class="btn-quiz">Answer 1</button>
+                    <button class="btn-quiz">Answer 2</button>
+                    <button class="btn-quiz">Answer 3</button>
+                    <button class="btn-quiz">Answer 4</button>
+
+                </div>
+                <div>
+                    <button id="next-btnSection2">Next</button>
+                    <!-- <button  >START
+                        SECTION 2</button> -->
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- Quiz two section ends here  -->
+
+        <!-- Game instructions starts here  -->
+
+        <div class="container-quiz-game" x-show="start_game">
+
+            <h3 class="quiz_and_game_instructions">INSTRUCTIONS ON FOR OUR WORD, PUZZLE AND RIDDLE GAMES</h3> <br>
+
+            <div>
+                <p>Three different games to test your critical skills. You can choose to start with anyone of them.</p>
+
+
+
+            </div>
+
+            <div class="container-game-only">
+
+                <div class="game_and_quiz_left">
+
+
+                    <article class="card8">
+                        <h5 style="color: white;">WORD GUESS</h5>
+                        <!-- <p class="card__description">20 Cases
+                  </p> -->
+
+                        <button class="guessing-word-submit-btn" x-on:click="openHome('play_game_guess')">CLICK TO
+                            PLAY</button>
+
+
+                        <div class="card__content">
+                            <div class="card__content--container">
+
+                                <p class="card__description">
+                                </p>
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <div class="game_and_quiz_middle">
+
+
+                    <article class="card8">
+                        <h5 style="color: white;">WORD SEARCH</h5>
+                        <!-- <p class="card__description">20 Cases
+                  </p> -->
+
+                        <button class="guessing-word-submit-btn" x-on:click="openHome('play_game_word')">CLICK TO
+                            PLAY</button>
+
+
+                        <div class="card__content">
+                            <div class="card__content--container">
+
+                                <p class="card__description">
+                                </p>
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+
+
+
+                <div class="game_and_quiz_left">
+
+
+                    <article class="card8">
+                        <h5 style="color: white;">RIDDLE GAME</h5>
+                        <!-- <p class="card__description">20 Cases
+                  </p> -->
+
+                        <button class="guessing-word-submit-btn" x-on:click="openHome('play_game_riddle')">CLICK TO
+                            PLAY</button>
+
+
+                        <div class="card__content">
+                            <div class="card__content--container">
+
+                                <p class="card__description">
+                                </p>
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Game instructions ends here  -->
+
+
+        <!-- Guessing game starts here  -->
+
+        <div x-show="play_game_guess" class="container-quiz-game" x-cloak>
+
+
+
+
+            <h3 class="quiz_and_game_instructions">GUESSING GAME</h3> <br>
+
+            <!-- <p>SECTION 2</p> -->
+            <div class="detailed_instructions">
+                <p>
+                    NSTRUCTIONS: A hint will be displayed where you will be expected to guess the word by entering the
+                    word in all lower case in the text area and then hit the sugmit guess button.
+                    At the end of the game, you will be provided a total of how many you got correct as well as the ones
+                    you failed. <br>
+                    Goodluck!
+                </p>
+
+            </div>
+
+            <div class="container-guess-word-game">
+                <!-- <h1>WORD GUESSING GAME</h1> -->
+
+                <div id="hint-word-guess" class="hint-guess-word-game">
+
+
+                </div>
+
+                <div>
+                    <input type="text" id="guessInput-word-guess" placeholder="Enter your guess" required>
+                    <button onclick="checkGuessGuessWord()" id="guessBtn-word-guess"
+                        class="guess-word-game-submit-btn">SUBMIT GUESS</button>
+                </div>
+
+                <br><br><br><br><br><br><br>
+
+                <div id="result-word-guess" style="text-align: center;">
+
+                    <p>Result comes here</p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- word search starts here  -->
+
+        <div x-show="play_game_word" class="container-quiz-game" x-cloak>
+
+            <h3 class="quiz_and_game_instructions">WORD SEARCH GAME</h3> <br>
+
+            <!-- <p>SECTION 2</p> -->
+            <div class="detailed_instructions">
+                <p>
+                    Word Alignment: Words could be displayed vertically, horizontally or diagonally. <br>
+                    To start Selecting Words: STo select the letters press shift or Cmd and then click the letters
+                    in the correct order<br>
+                    Submitting Selected Words: Release the shift or cmd key
+                </p>
+
+            </div>
+
+            <div id="" class="container_search">
+
+                <div id="hint" class="hint">
+        
+                </div>
+        
+                <div  class="letters">
+                    <button id="letters" class="button"></button>
+                    <!-- <button id="restartButton">Restart Game</button> -->
+        
+                </div>
+        
+            </div>
+
+            
+
+
+        </div>
+
+
+
+
+        <!-- word Guessing ends here  -->
+
+
+        <!-- riddle word starts here  -->
+
+        <div x-show="play_game_riddle" class="container-quiz-game" x-cloak>
+
+            <h3 class="quiz_and_game_instructions">RIDDLE GAME</h3> <br>
+
+            <div class="container-guess-word-game">
+
+                <!-- <h1>RIDDLE GAME</h1> -->
+
+                <div id="hint-riddle-guess" class="hint-guess-word-game">
+
+
+                </div>
+
+                <div>
+                    <input type="text" id="guessInput-riddle-guess" placeholder="Enter your guess" required>
+                    <button onclick="checkGuessGuessRiddle()" id="guessBtn-riddle-guess"
+                        class="guess-word-game-submit-btn">SUBMIT GUESS</button>
+                </div>
+
+                <br><br><br><br><br><br><br>
+
+                <div id="result-riddle-guess" style="text-align: center;">
+
+                    <p>Result comes here</p>
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <!-- riddle word ends here  -->
+
+
+
+    </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const toggleBtn = document.querySelector('.toggle-btn');
+          const centreNav = document.querySelector('.centre_nav');
+          toggleBtn.addEventListener('click', function () {
+            centreNav.classList.toggle('active');
+          });
+        
+          const centreNavLinks = document.querySelectorAll('.centre_nav a');
+          centreNavLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+              centreNavLinks.forEach(function (item) {
+                item.classList.remove('active');
+              });
+              this.classList.add('active');
+            });
+          });
+        });
+        </script>
+      
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="static/js/script.js"></script>
+    <script src="static/js/jquerry/script.js"></script>
+
+</body>
+
+</html>

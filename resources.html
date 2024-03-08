@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="recourses.css">
+</head>
+
+<body>
+    <section class="nav_sec">
+        <div class="top-nav">
+          <div class="logo"><img src="./images/logo.jpg" alt="" width="145px"></div>
+    
+          <div class="nav-icons">
+            <div class="location">
+              <img src="./images/Location (1).png" alt="Location Icon" width="20px">
+              <span>72 New Rd, Glen Austin AH,<br> Midrand, 1685</span>
+            </div>
+            <div class="phone">
+              <img src="./images/Group 234.png" alt="Phone Icon" width="30px"><br>
+              <span>for enquiries call: <br>+27 8735 766 08 or 011 628 7000</span>
+            </div>
+            <div class="email">
+              <img src="./images/Subtract.png" alt="Email Icon" width="30px">
+              <span>or send enquiries to: <br>info@chieta.org.za</span>
+            </div>
+          </div>
+        </div>
+        <!-- Updated Second Navigation Bar -->
+        <div class="bottom-nav">
+          <div class="nav-links">
+            <div class="right-links">
+              <button class="toggle-btn">&#9776;</button> <!-- Toggle button -->
+              <div class="dropdown">
+              </div>
+            </div>
+            <div class="centre_nav">
+              <a href="./index.html">Home</a>
+              <a href="./SDF.html">SDC&SDF</a>
+              <a href="./legislations.html">Laws & Legislations</a>
+              <a href="./structures.html">PSET Entities</a>
+              <a href="./resources.html">Resources</a>
+              <a href="./assessments.html">Assessments</a>
+            </div>
+          </div>
+        </div>
+        <!-- ....................CAOUROSAL ..j -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="p-5 custom-container">
+                <h6 class="text-orange text-uppercase mb-md-3"></h6>
+                <h7 class="white_text">Additional Resources 
+                </h1>
+              </div>
+            </div>
+           
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    
+        </div>
+      </section>  
+
+      <section class="profiles">
+        <div class="team">
+          <h2 class="title"></h2>
+          <br><br><br><br>
+          <div class="authors">
+            <div class="login-container">
+              <h1>Skill Development Committee Additional Resources</h1>
+              <br><br>
+              <div class="description">
+              
+                <div class="bottom-row"> <!-- New div for bottom row -->
+                  <div class="powerpoint-container1">
+                    <iframe width="100%" height="100%" src="./pdf/IMS-Mandatory-Grants-SDF-Manual-Ver-2.1.pdf" type="application/pdf">
+                    </iframe>
+                    <p class="powerlabel"><strong>Integrated Management System (IMS) User Manual
+                    </strong></p>
+                  </div>
+                  <div class="powerpoint-container1">
+                    <iframe width="100%" height="100%" src="./pdf/NQF act Amended section.pdf" type="application/pdf"></iframe>
+                    <p class="powerlabel"><strong>National Qualification Framework Manual</strong></p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br><br><br>
+        </div>
+        <br><br><br><br>
+      </section>
+      
+  
+      
+      <section class="profiles">
+        <div class="team">
+          <h2 class="title"></h2>
+          <br><br><br><br>
+          <div class="authors">
+            <div class="login-container">
+              <h1>Skill Development Committee Additional Resources</h1>
+              <br><br>
+              <div class="description">
+              
+                <div class="top-row">
+                  <div class="powerpoint-container">
+                    <img src="./images/group_therapy_md_wm_gif (220×220).gif" alt="PowerPoint Icon" width="220" height="190">
+                    <p class="powerlabel"><strong>CHIETA grant template & Manual</strong></p>
+                    <a href="./Excell/CHIETA grant template & Manual" download>
+                      <button class="start_button">Download</button>
+                    </a>
+                  </div>
+                  <div class="powerpoint-container">
+                    <img src="./images/Webquest Creator 2.gif" alt="PowerPoint Icon" width="220" height="160">
+                    <p class="powerlabel"><strong>Organising Framework for Occupations (OFO) Guidelines</strong></p>
+                    <a href="./Excell/Organising Framework for Occupations (OFO) Guidelines.xlsx" download>
+                      <button class="start_button">Download</button>
+                    </a>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <br><br><br><br>
+        </div>
+        <br><br><br><br>
+      </section>
+           
+    
+         
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const toggleBtn = document.querySelector('.toggle-btn');
+          const centreNav = document.querySelector('.centre_nav');
+          toggleBtn.addEventListener('click', function () {
+            centreNav.classList.toggle('active');
+          });
+        
+          const centreNavLinks = document.querySelectorAll('.centre_nav a');
+          centreNavLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+              centreNavLinks.forEach(function (item) {
+                item.classList.remove('active');
+              });
+              this.classList.add('active');
+            });
+          });
+        });
+        </script>
+      
+      
+      <!-- .........................additional resoucres  -->
+      
+      <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>

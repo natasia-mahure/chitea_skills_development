@@ -1,0 +1,411 @@
+body {
+  background-image: url("./static/images/coal-mine.jpg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  color: white;
+}
+
+main {
+  background-color: white;
+}
+
+.footer {
+  color: white;
+  font-family: cursive, "Brush Script MT";
+  background-color: white;
+}
+
+table {
+      border-collapse: collapse;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+
+td {
+  border: 1px solid black;
+  width: 50px;
+  height: 30px;
+  color: red;
+}
+
+.container-quiz-game {
+  width: 950px;
+  height: 480px;
+  margin: 0px auto;
+  /* border: 1px solid black; */
+  margin: 10px auto 0;
+  border-radius: 10px;
+  padding: 1px;
+}
+
+.quiz_and_game_instructions {
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background: orange;
+}
+
+.container-game-only {
+  width: 1205px;
+  height: 480px;
+  margin: 0px auto;
+  /* border: 1px solid black; */
+  margin: 10px auto 0;
+  border-radius: 10px;
+  padding: 1px;
+}
+
+.game_and_quiz_left {
+  width: 400px;
+  float: left;
+  /* border: 1px solid black; */
+  margin: 50px auto 0;
+  padding: 5px;
+}
+
+.game_and_quiz_middle {
+  width: 400px;
+  float: right;
+  /* border: 1px solid black; */
+  margin: 50px auto 0;
+  padding: 5px;
+}
+
+.game_and_quiz_right {
+  width: 400px;
+  float: right;
+  /* border: 1px solid black; */
+  margin: 50px auto 0;
+  padding: 5px;
+}
+
+.guessing-word-submit-btn {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid black;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Vertically center the button */
+}
+
+.guessing-word-submit-btn:hover:not([disabled]) {
+  background: blue;
+  color: orange;
+}
+
+/* styling for the word search game starts here  */
+
+.homeImage {
+  width: 100%;
+  height: auto;
+  border: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white;
+}
+
+.page_header {
+  text-align: center;
+  color: black;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: black;
+}
+
+b {
+  color: black;
+}
+
+td,
+th {
+  color: white;
+}
+
+#home-text {
+  font-size: 20px;
+}
+
+.app {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.app h1 {
+  font-weight: red;
+  color: green;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 18px;
+  color: #001e4d;
+  font-weight: 600;
+}
+
+.btn-quiz {
+  background: white;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-quiz:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+}
+
+.btn-quiz:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background: orange;
+  color: red;
+  width: auto;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+}
+
+#next-btnSection2 {
+  background: orange;
+  color: red;
+  width: auto;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+}
+
+
+.correct {
+  background: #9aeabc;
+}
+
+.incorrect {
+  background: red;
+}
+
+/* styling for guessing game starts here  */
+
+.container-guess-word-game {
+  width: 510px;
+  height: 350px;
+  /* margin: 0px auto; */
+  border: 1px solid black;
+  margin: 10px auto 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h1 {
+  width: auto;
+  height: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.hint-guess-word-game {
+  font-size: 1.2em;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 15px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+input:required[type="text"] {
+  width: 330px;
+  height: 30px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  float: left;
+}
+
+.guess-word-game-submit-btn {
+  width: 150px;
+  height: 30px;
+  float: right;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid black;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  background: gray;
+}
+
+.guess-word-game-submit-btn:hover:not([disabled]) {
+  background: blue;
+  color: orange;
+}
+
+/* styling for guessing game ends here  */
+
+.detailed_instructions {
+  width: auto;
+  border: 1px solid black;
+  padding: auto;
+  border-radius: 10px;
+}
+
+
+
+/* word search game styling starts here */
+
+.hint {
+  width: 200px;
+  height: 550px;
+  float: left;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 5px;
+  
+}
+
+.remainingWords{
+  color: red;
+  width: 200px;
+  height: 550px;
+  float: left;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.displayTime{
+
+  color: red;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  /* border: 1px solid black; */
+  /* border-radius: 10px; */
+  margin-top: 5px;
+}
+
+.restartButton{
+
+  background: white;
+  display: none;
+  color: #222;
+  font-weight: 500;
+  width: auto;
+  border: 1px solid #222;
+  float: inherit;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.restartButton:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+}
+
+.container_search {
+  width: 810px;
+  height: 600px;
+  margin: 0px auto;
+}
+
+.letters {
+  width: 600px;
+  height: 600px;
+  /* border: 1px solid black; */
+  float: right;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.individual {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 25px;
+  text-align: center;
+  margin: 3px;
+  color: blue;
+  padding: auto;
+}
+
+.button{
+
+  border: 0px solid black;
+  background: white;
+  width: auto;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.colorPurple {
+  background: purple;
+}
+
+.correctlySelected {
+  background: rgba(0, 30, 255, 0.537);
+}
+
+#message {
+  color: orange;
+  font-size: 30px;
+}
+
+
