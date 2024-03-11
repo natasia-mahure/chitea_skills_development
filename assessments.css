@@ -16,9 +16,12 @@ body {
     background-size: cover;
   }
 
-  @media (max-width: 768px) { /* Adjust this according to your needs */
+  @media (min-width: 300px) and (max-width: 800px) { /* Adjust this according to your needs */
     .top-nav {
-      height: 22vh; /* Increase height for small screens */
+      height: 57vh; /* Increase height for small screens */
+      display: list-item;
+      justify-content: center;
+      justify-content: center;
     }
   }
   

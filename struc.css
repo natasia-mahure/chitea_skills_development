@@ -23,6 +23,14 @@ background-color: white;
   color: white;
 }
 
+@media (min-width: 300px) and (max-width: 800px) { /* Adjust this according to your needs */
+  .top-nav {
+    height: 57vh; /* Increase height for small screens */
+    display: list-item;
+    justify-content: center;
+    justify-content: center;
+  }
+}
 .top-nav .nav-icons {
   display: flex;
   
@@ -657,6 +665,39 @@ a {
   width: 85%;
   margin: 0 auto; /* Center the container horizontally */
 }
+
+
+@media (min-width: 300px) and (max-width: 800px){
+  .cards-container {
+    width: 60%; /* Set width to 60% for screens wider than 1440px */
+  }
+}
+
+@media (min-width: 801px) and (max-width: 900px){
+  .cards-container {
+    width: 100%; /* Set width to 60% for screens wider than 1440px */
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 20000px){
+  .cards-container {
+    width: 50%; /* Set width to 60% for screens wider than 1440px */
+  }
+}
+
+
+.cards-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 85%;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+
+
 
 .cards-container2 {
   display: flex;
@@ -1656,7 +1697,7 @@ outline: none;
 
 .swiper {
 width: 100%;
-height: 100%;
+height: 94vh;
 /* background-color: linear-gradient(rgba(6, 0, 8, 0.7), rgba(7, 8, 14, 0.7)); */
 
 }
@@ -1677,11 +1718,11 @@ background-repeat: no-repeat;
 background-image: linear-gradient(rgba(6, 0, 8, 0.7), rgba(7, 8, 14, 0.7)), url(./images/cover\ 1.jpg);
 }
 
-
-/* .swiper_section {
-height: 45vh;
+@media (max-width: 600px) {
+  .swiper, .swiper-wrapper, .swiper-slide {
+    height: 100vh; /* Increase height for small phone screens */
+  }
 }
-*/
 .swiper-slide img {
 display: block;
 width: 100%;

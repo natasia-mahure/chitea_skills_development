@@ -16,9 +16,14 @@ body {
   background-size: cover;
 }
 
-@media (max-width: 768px) { /* Adjust this according to your needs */
+
+
+@media (min-width: 300px) and (max-width: 800px) { /* Adjust this according to your needs */
   .top-nav {
-    height: 22vh; /* Increase height for small screens */
+    height: 57vh; /* Increase height for small screens */
+    display: list-item;
+    justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -844,6 +849,12 @@ h1 {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  h1 {
+    height: 60px; /* Increased height for smaller screens */
+  }
+}
+
 
 .description {
   margin-bottom: 20px;
@@ -917,6 +928,14 @@ border-radius: 8px 8px 8px 8px;
   text-align: center;
   margin: auto;
   color:  #3a093a;
+}
+
+@media (max-width: 600px) {
+  .powerpoint-container {
+    width: 100%; /* Full width on small screens */
+    height: 400px; /* Auto-adjust height */
+    border: 2px solid #3a093a; /* Slightly thinner border for small screens */
+  }
 }
 
 .video-container video {

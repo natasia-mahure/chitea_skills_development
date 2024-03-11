@@ -23,6 +23,15 @@ background-color: white;
   color: white;
 }
 
+@media (min-width: 300px) and (max-width: 800px) { /* Adjust this according to your needs */
+  .top-nav {
+    height: 57vh; /* Increase height for small screens */
+    display: list-item;
+    justify-content: center;
+    justify-content: center;
+  }
+}
+
 .top-nav .nav-icons {
   display: flex;
   
@@ -810,12 +819,35 @@ border-radius: 8px 8px 8px 8px;
   color:  #3a093a;
 }
 
+@media (max-width: 600px) {
+  .powerpoint-container {
+    width: 100%; /* Full width on small screens */
+    height: 410px; /* Auto-adjust height */
+    border: 2px solid #3a093a; /* Slightly thinner border for small screens */
+  }
+}
 .video-container video {
   width: 290px; /* Adjust width as needed */
   height: 200px;
   border-radius: 8px 8px 8px 8px;
   
 }
+
+@media (max-width: 600px) {
+  .video-container2 video {
+    width: 100%; /* Make container width responsive */
+    max-width: 300px; /* Maximum width for small screens */
+    margin: 0 auto; /* Center the container */
+  }
+}
+
+@media (max-width: 600px) {
+  .video-container3 {
+    width: 400px; /* Maximum width for small screens */
+    margin-right: 30px;
+  }
+}
+
 
 .video-container .start_button {
 margin-left: 100px;

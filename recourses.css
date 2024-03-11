@@ -19,6 +19,25 @@ body {
   /* height: 150vh; */
   background-color: white;
 }
+
+
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+      word-wrap: break-word;
+      padding: 10px;
+    }
+  }
+
+@media (min-width: 300px) and (max-width: 800px) { /* Adjust this according to your needs */
+  .top-nav {
+    height: 57vh; /* Increase height for small screens */
+    display: list-item;
+    justify-content: center;
+    justify-content: center;
+  }
+}
 .top-nav .logo {
   color: white;
 }
@@ -962,9 +981,6 @@ h5 {
   padding-bottom: 20px;
   
   
-
-
-
   /* ................................................impotant.................................. */
 }
 h1 {
@@ -1702,7 +1718,7 @@ form button[type="reset"] {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 300px) {
   .login-container {
     width: 500px;
     height: 940px;
@@ -1746,4 +1762,45 @@ form button[type="reset"] {
   .login-container h1 {
     height: auto;
   }
+}
+@media (max-width: 700px) {
+  .team {
+    /* Increase padding or margins as necessary */
+    padding: 20px; /* Example */
+    margin: 20px; /* Example */
+    height: 187vh;
+    background-color: transparent;
+
+  }
+}
+
+
+
+
+@media (max-width: 700px) {
+  .profiles { /* Increase padding or margins as necessary */
+    padding: 20px; /* Example */
+    margin: 20px; /* Example */
+    height: 250vh;
+  }
+    
+}
+
+@media (max-width: 700px) {
+  .authors { /* Increase padding or margins as necessary */
+    padding: 20px; /* Example */
+    margin: 20px; /* Example */
+    height: 250vh;
+  }
+    
+}
+
+
+@media (max-width: 700px) {
+  .profiles { /* Increase padding or margins as necessary */
+    padding: 20px; /* Example */
+    margin: 20px; /* Example */
+    height: 270vh;
+  }
+    
 }
