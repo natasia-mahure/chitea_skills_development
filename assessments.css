@@ -15,6 +15,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media (max-width: 768px) { /* Adjust this according to your needs */
+    .top-nav {
+      height: 22vh; /* Increase height for small screens */
+    }
+  }
+  
   .nav_sec{
     /* height: 150vh; */
   background-color: white;

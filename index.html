@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,137 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+    /* background-color: linear-gradient(rgba(6, 0, 8, 0.7), rgba(7, 8, 14, 0.7)); */
+
+  }
+
+  .swiper-wrapper {
+    height: 94vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(6, 0, 8, 0.7), rgba(7, 8, 14, 0.7)), url(./images/cover\ 1.jpg);
+  }
+
+
+  /* .swiper_section {
+  height: 45vh;
+}
+*/
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #141212;
+
+
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  .custom-container {
+    width: 100%;
+    max-width: 900px;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    /* Add padding as needed */
+    margin-top: 10px;
+    /* Adjust the top margin */
+    margin-bottom: 10px;
+    /* Adjust the bottom margin */
+  }
+
+  .white_text {
+    color: rgb(247, 246, 244);
+    font-size: 70px;
+    margin-bottom: 10px;
+    /* Adjust the bottom margin */
+
+  }
+
+  .text-orange {
+    color: #876629;
+    font-size: 25px;
+    margin-top: 10px;
+    /* Adjust the top margin */
+    margin-bottom: 10px;
+    /* Adjust the bottom margin */
+  }
+
+
+  .display-3 {
+    font-size: 2.5rem;
+    /* Adjust as needed */
+  }
+
+  .button-slider {
+    background-color: #876629;
+    color: #fff;
+    width: 129px;
+    height: 30px;
+    background-color: #6e4b0e;
+
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the text horizontally */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8PX 8PX 8PX 8PX;
+    border: 1px solid #360950;
+    /* Dark purple border */
+    font-size: 13px;
+    box-shadow: #141212;
+  }
+
+
+  .button-slider:hover {
+    background-color: #360950;
+    color: #fff;
+    width: 129px;
+    height: 30px;
+    background-color: #6e4b0e;
+
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the text horizontally */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8PX 8PX 8PX 8PX;
+    border: 1px solid #360950;
+    /* Dark purple border */
+    font-size: 13px;
+    box-shadow: #141212;
+  }
+
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+</style>
 
 <body>
   <!-- first navigation bar  -->
@@ -46,7 +178,7 @@
     <div class="bottom-nav">
       <div class="nav-links">
         <div class="right-links">
-          <button class="toggle-btn">&#9776;</button> 
+          <button class="toggle-btn">&#9776;</button>
           <div class="dropdown">
           </div>
         </div>
@@ -68,27 +200,27 @@
             <h6 class="text-orange text-uppercase mb-md-3"></h6>
             <h7 class="white_text">Welcome to the Skill Development Committee Toolkit</h1>
               <a href="#" class="button-slider">Ready to Learn?</a>
-              <br><br><br><br><br><br><br>
-          
+
+
           </div>
         </div>
         <div class="swiper-slide">
           <div class="p-5 custom-container">
             <h6 class="text-orange text-uppercase mb-md-3"></h6>
-         
+
             <h7 class="white_text">Innovating For Impact</h1>
-              <br><br><br><br><br><br><br>
-          
-           
+
+
+
           </div>
-      
+
         </div>
         <div class="swiper-slide">
           <div class="p-5 custom-container">
             <h7 class="white_text">Innovating For Impact</h1>
-              <br><br><br><br><br><br><br>
-          
-           
+
+
+
           </div>
         </div>
       </div>
@@ -198,7 +330,7 @@
   <!-- This section is for the SDF section with the vedio tutorial, the team and profile are containers -->
   <section class="profiles">
     <div class="team">
-      <h3 class="title3">Skill Development Facilitator (SDF)</h3>
+      <h3 class="title3"> A User's Guide to the Skill Development <br>Committee Toolkit </h3>
       <div class="authors">
         <div class="login-container">
           <h1>Innovating For Impact</h1>
@@ -211,13 +343,15 @@
               </video>
             </div>
             <ul>
-              <strong>Content</strong>
-              <li>Introduction and Background</li>
-              <li>Categories of an SDF</li>
-              <li>Appointment of an SDF</li>
-              <li>Roles and Responsibilities of an SDF</li>
-              <li>SDF an Skills</li>
-              <li>SDF an Knowledge and Attributes</li>
+              <strong>Content</strong> <br>
+              <br>
+              <li>Navigating the Homepage</li>
+              <li>Understanding the Layout</li>
+              <li>Quick Links and Resources</li>
+              <li>How to Download and Use Materials</li>
+              <li>Interactive Elements and Online Learning</li>
+              <li>
+                How to Get Further Help</li> <br>
               <a href="./SDF.html"><button class="start_button">Click to start course</button></a>
             </ul>
           </div>
@@ -245,19 +379,19 @@
               </video>
             </div>
             <div class="content">
-            <ul>
+              <ul>
 
-              <strong>Content</strong>
-              <br><br>
-              <li>Introduction to the SDC</li>
-              <li>The role of an SDC</li>
-              <li>Attributes of the SDC</li>
-              <li>Members of the SDC</li>
-              <li>The composition of the SDC</li>
+                <strong>Content</strong>
+                <br><br>
+                <li>Introduction to the SDC</li>
+                <li>The role of an SDC</li>
+                <li>Attributes of the SDC</li>
+                <li>Members of the SDC</li>
+                <li>The composition of the SDC</li>
 
-              <br><br><a href="./SDF.html"><button class="start_button"> Click to start course</button></a>
-            </ul>
-          </div>
+                <br><br><a href="./SDF.html"><button class="start_button"> Click to start course</button></a>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -294,7 +428,7 @@
           </div>
         </div>
       </article>
-      
+
       <article class="card3">
         <h5>Skills Development Act 97 of 1998.</h5>
         <p class="card__description">
@@ -452,18 +586,18 @@
     document.addEventListener('DOMContentLoaded', function () {
       const toggleBtn = document.querySelector('.toggle-btn');
       const centreNav = document.querySelector('.centre_nav');
-      
-      let timer; 
-      
-      toggleBtn.addEventListener('click', function () {
-        clearTimeout(timer); 
-        
 
-        timer = setTimeout(function() {
+      let timer;
+
+      toggleBtn.addEventListener('click', function () {
+        clearTimeout(timer);
+
+
+        timer = setTimeout(function () {
           centreNav.classList.toggle('active');
         }, 200);
       });
-  
+
       const centreNavLinks = document.querySelectorAll('.centre_nav a');
       centreNavLinks.forEach(function (link) {
         link.addEventListener('click', function () {

@@ -15,6 +15,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 768px) { /* Adjust this according to your needs */
+  .top-nav {
+    height: 22vh; /* Increase height for small screens */
+  }
+}
+
 .nav_sec{
   /* height: 150vh; */
 background-color: white;
@@ -233,82 +240,6 @@ a {
   margin-top: 12px;
 }
 
-/* .button { */ 
-  /* display: block;
-  width: 100%;
-  padding: 12px; */
-
-   /* Button text color */
-  /* text-decoration: none;
-  border: none;
-  border-radius: 0 0 8px 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; */
-/* }not this one */
-
-
-/* .about{
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* this is the cate caids  */
-/* .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
-  padding-left: 350px;
-  max-width: 1200px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* height: 400vh; */
-  /* margin: 0;
-  background-color: #f2f2f2; */
-  /* Optional background color */
-/* } */
-
-/* .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 100%;
-  gap: 24px;
-  padding: 14px;
-  padding-left: 350px;
-  flex-wrap: wrap;
-  max-width: 1200px; */
-  /* Set a maximum width if needed */
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; */
-  /* 100% of the viewport height */
-  /* margin: 0; */
-  /* Remove default body margin */
-/* } */
-
-/* .box {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%; */
-  /* position: relative; */
-  /* padding: 24px;
-  background: #fff;
-
-}
-
-.box-top {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  gap: 8px;
-  margin-bottom: 7px;
-} */
-
 
 .section_icones{
   display: flex;
@@ -377,10 +308,12 @@ a {
 }
 
 
-/* .swiper_section {
-  height: 45vh;
+@media (max-width: 768px) {
+  .swiper-wrapper,
+  .swiper-slide {
+    height: 120vh; /* Increased height for small screens */
+  }
 }
-*/
 .swiper-slide img {
   display: block;
   width: 100%;

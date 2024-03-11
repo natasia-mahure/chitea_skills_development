@@ -902,6 +902,7 @@ h5 {
   align-items: center;
   justify-content: center;
   border-radius: 8px 8px 8px 8px;
+  height: 98vh;
   padding: 2px; /* Add 2px padding around each box */
 }
 
@@ -921,7 +922,7 @@ h5 {
 }
 .login-container {
   /* display: flex; */
-  height: 470px;
+ 
   width: 920px;
   padding: 20px;
   border-radius: 5px;
@@ -957,7 +958,8 @@ h5 {
   text-align: center;
   margin-bottom: 20px;
   color: #ebe2ec;
-  padding-top: 19px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   
   
   /* ................................................impotant.................................. */
@@ -1008,8 +1010,8 @@ h1 {
   margin: auto;
 }
 .powerpoint-container {
-  width: 300px; /* Adjust width as needed */
-  height: 290px;
+  width: 110px; 
+  height: 270px;
   border-radius: 8px; /* Uniform radius for all corners */
   background-color: transparent; /* Blue background */
   border: 4px solid #3a093a; /* Bold, purple border */
@@ -1021,25 +1023,29 @@ h1 {
   color: #3a093a; /* Text color */
   /* Remove padding-left as it can offset your content, use padding only if needed for internal spacing */
   padding: 10px; /* Add padding as needed for internal spacing */
-  margin-left: 50px;
+  margin-left: 90px;
 }
 
+
+
 .powerpoint-container1 {
-  width: 300px; /* Adjust width as needed */
-  height: 290px;
+  width: 400px !important; /* Ensure width is always 300px */
+  height: 270px !important; /* Ensure height is always 300px */
   border-radius: 8px; /* Uniform radius for all corners */
-  background-color: transparent; /* Blue background */
+  background-color: transparent; /* Set background to transparent */
   border: 4px solid #3a093a; /* Bold, purple border */
-  display: block; /* Set display to flex to enable flex properties */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
+  display: block; /* Ensure the container is displayed as a block */
+  align-items: center; /* Center items vertically - note this will only apply if display is flex */
+  justify-content: center; /* Center items horizontally - note this will only apply if display is flex */
   text-align: center; /* Center text */
   margin: 20px auto; /* Center the container with auto margins on the sides, and add 20px margin on top and bottom */
   color: #3a093a; /* Text color */
-  /* Remove padding-left as it can offset your content, use padding only if needed for internal spacing */
-  padding: 10px; /* Add padding as needed for internal spacing */
-  margin-left: 19px;
+  margin-left: 30px;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  /* Padding-left removed; use general padding if needed for internal spacing */
 }
+
 
 .video-container video {
   width: 290px; /* Adjust width as needed */

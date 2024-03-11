@@ -33,17 +33,29 @@ body {
   margin: 11% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 38%; 
+  width: 25%; 
   z-index: 1001;
-  height: 25%;
+  height: 27%;
   font-size: 10px;
   border-radius: 20px; 
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
   align-items: center; 
+  text-align: center;
 }
-
+@media (max-width: 600px) { /* Adjust this according to your needs */
+  .popup-content {
+    text-align: center;
+    height: 50%; /* Increase height for small screens */  
+  }
+}
+@media (min-width: 1680px) { /* Adjust based on your definition of slightly larger than a desktop */
+  .popup-content {
+    height: 15vh; /* Set height to 15% of the viewport height */
+    width: 18vw; /* Set width to 25% of the viewport width */
+  }
+}
 .pop-button {
   display: flex; 
   align-items: center; 
@@ -71,7 +83,6 @@ body {
 .pop-button {
   background-color: #43034f;;
   color: white;
-
   width: 80px;
   height: 24px;
   padding: 15px 15px 10px 10px; 
@@ -105,7 +116,11 @@ background-color: white;
 .top-nav .nav-icons {
   display: flex;  
 }
-
+@media (max-width: 768px) { /* Adjust this according to your needs */
+  .top-nav {
+    height: 27vh; /* Increase height for small screens */
+  }
+}
 .top-nav .nav-icons div {
   margin-right: 20px;
   color: rgb(10, 1, 1);
@@ -479,6 +494,12 @@ a {
   margin: 0 auto; /* Center the container horizontally */
 }
 
+@media (min-width: 1440px) {
+  .cards-container {
+    width: 60%; /* Set width to 60% for screens wider than 1440px */
+  }
+}
+
 .cards-container2 {
   display: flex;
   justify-content: center;
@@ -487,6 +508,12 @@ a {
   gap: 20px;
   width: 85%;
   margin: 0 auto; /* Center the container horizontally */
+}
+
+@media (min-width: 1440px) {
+  .cards-container2 {
+    width: 60%; /* Set width to 65% for screens wider than 1440px */
+  }
 }
 
 
@@ -502,6 +529,7 @@ a {
   background-image: linear-gradient(rgba(6, 0, 8, 0.7), rgba(60, 61, 65, 0.7)), url(./images/law2.png);
   transition: transform 0.3s ease-in-out; 
   cursor: pointer; 
+  
 }
 
 
@@ -554,7 +582,6 @@ a {
   background-image: linear-gradient(rgba(6, 0, 8, 0.7), rgba(60, 61, 65, 0.7)), url(./images/skill\ act.jpg);
   cursor: pointer; 
   transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
-
 }
 
 .card3{
@@ -570,7 +597,6 @@ a {
   background-image: linear-gradient(rgba(6, 0, 8, 0.7), rgba(60, 61, 65, 0.7)), url(./images/report.png);
   transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
   cursor: pointer; 
-
 }
 
 .card4{
@@ -585,8 +611,6 @@ a {
   background-image: linear-gradient(rgba(6, 0, 8, 0.7), rgba(60, 61, 65, 0.7)), url(./images/levies.jpg);
   transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
   cursor: pointer; 
-  
-
 }
 
 .card5{
@@ -601,7 +625,6 @@ a {
   background-size: cover;
   transition: transform 0.3s ease-in-out; 
   cursor: pointer; 
-
 }
 
 .card6{
@@ -863,6 +886,14 @@ h1{
   width: 400px; /* Adjust width as needed */
   height: auto;
 }
+@media (min-width: 300px) and (max-width: 700px) {
+  .video-container video {
+    width: 300px; /* Set width to 300px on small screens */
+    height: 200px; /* Set height to 200px on small screens */
+  }
+}
+/* width: 300px;
+height: 200px; */
 .profile-img2{
     height: 110px;
     width: 110px;
@@ -1576,7 +1607,7 @@ form button[type="reset"] {
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 300px) {
   /* controls the assessment page  */
 
   .blog_catergories {
@@ -1591,6 +1622,7 @@ form button[type="reset"] {
   .video-container {
     display: block;
     width: auto;
+    
   }
 
   .blog-container1,
@@ -1598,6 +1630,7 @@ form button[type="reset"] {
   .blog-container3 {
     justify-content: center;
     display: flex;
+    text-align: center;
   }
   .login-container{
     width: auto;

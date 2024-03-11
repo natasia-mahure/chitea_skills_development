@@ -729,7 +729,12 @@ h1 {
   text-align: center;
   
 }
-
+@media (max-width: 600px) { /* Adjust this according to your needs */
+  h1 {
+    height: auto; /* Adjust height for smaller screens, could be 'auto' or any specific value */
+    padding: 20px 0; /* Add vertical padding to increase effective background height */
+  }
+}
 
 .description {
   margin-bottom: 20px;
