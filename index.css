@@ -33,9 +33,9 @@ body {
   margin: 11% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 28%; 
+  width: 25%; 
   z-index: 1001;
-  height: 35%;
+  height: 27%;
   font-size: 10px;
   border-radius: 20px; 
   display: flex; 
@@ -44,45 +44,18 @@ body {
   align-items: center; 
   text-align: center;
 }
-/* For very small screens, such as smaller mobile phones */
-@media (max-width: 500px) {
+@media (max-width: 600px) { /* Adjust this according to your needs */
   .popup-content {
     text-align: center;
-    height: 47%; /* Increase height for small screens */
+    height: 50%; /* Increase height for small screens */  
   }
 }
-
-/* For medium screens, including large phones, tablets, and small desktops */
-@media (min-width: 501px) and (max-width: 800px ) {
+@media (min-width: 1680px) { /* Adjust based on your definition of slightly larger than a desktop */
   .popup-content {
-    height: 50vh; /* Adjust height for medium screens */
-    width: 50vw; /* Adjust width for medium screens */
+    height: 15vh; /* Set height to 15% of the viewport height */
+    width: 18vw; /* Set width to 25% of the viewport width */
   }
 }
-
-@media (min-width: 801px) and (max-width: 1025px) {
-  .popup-content {
-    height: 50vh; /* Adjust height for medium screens */
-    width: 50vw; /* Adjust width for medium screens */
-  }
-}
-
-@media (min-width: 1100px) and (max-width: 20000px){
-  .popup-content {
-    height: 15vh; /* Adjust height for medium screens */
-    width: 17vw; /* Adjust width for medium screens */
-  }
-}
-
-@media (min-width: 801px) and (max-width: 1025px){
-  .popup-content {
-    height: 60vh; /* Set height to 15% of the viewport height for large screens */
-    width: 19vw; /* Set width to 25% of the viewport width for large screens */
-  }
-}
-
-
-
 .pop-button {
   display: flex; 
   align-items: center; 
@@ -143,6 +116,7 @@ background-color: white;
 .top-nav .nav-icons {
   display: flex;  
 }
+
 @media (min-width: 300px) and (max-width: 800px) { /* Adjust this according to your needs */
   .top-nav {
     height: 57vh; /* Increase height for small screens */
@@ -151,9 +125,6 @@ background-color: white;
     justify-content: center;
   }
 }
-
-
-
 .top-nav .nav-icons div {
   margin-right: 20px;
   color: rgb(10, 1, 1);
@@ -1448,6 +1419,99 @@ form button[type="reset"] {
     display: none;
   }
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+  /* background-color: linear-gradient(rgba(6, 0, 8, 0.7), rgba(7, 8, 14, 0.7)); */
+
+}
+
+.swiper-wrapper {
+  height: 94vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(6, 0, 8, 0.7), rgba(7, 8, 14, 0.7)), url(./images/cover\ 1.jpg);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #141212;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.custom-container {
+  width: 100%;
+  max-width: 900px;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.white_text {
+  color: rgb(247, 246, 244);
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.text-orange {
+  color: #876629;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.display-3 {
+  font-size: 2.5rem;
+}
+
+.button-slider {
+  background-color: #876629;
+  color: #fff;
+  width: 129px;
+  height: 30px;
+  background-color: #6e4b0e;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8PX 8PX 8PX 8PX;
+  border: 1px solid #360950;
+  font-size: 13px;
+  box-shadow: #141212;
+}
+
+
+.button-slider:hover {
+  width: 135px;
+  height: 27px;
+  background-color: #6e4b0e;
+  border-radius: 8PX 8PX 8PX 8PX;
+  color: white;
+
+}
 
 @media screen and (min-width: 768px) {
   .bottom-nav {
@@ -1541,9 +1605,6 @@ form button[type="reset"] {
   .blog-container3 {
     justify-content: center;
     display: flex;
-    width: 300px;
-    height: 200px;
-    margin: auto;
   }
   .login-container{
     width: auto;
@@ -1555,7 +1616,6 @@ form button[type="reset"] {
 
   .blog_catergories {
     display: block;
-    width: 115%;
   }
 
   .login-container{
@@ -1621,15 +1681,10 @@ form button[type="reset"] {
 
 
 /* Styling for smaller screens */
-@media screen and (max-width: 800px) { /* Adjust 768px to your needs, this targets smaller devices like tablets and phones */
+@media screen and (max-width: 768px) { /* Adjust 768px to your needs, this targets smaller devices like tablets and phones */
   .profiles,
   .team,
   .authors {
-    height: 140vh; /* Adjust this value based on your needs */
-    margin-bottom: 40px;
-  }
-
-  .profiles{
-    margin-top: 60px;
+    height: 150vh; /* Adjust this value based on your needs */
   }
 }
